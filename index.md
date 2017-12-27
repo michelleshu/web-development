@@ -29,7 +29,7 @@ The final 4 weeks of the course will be dedicated to a final project, in which y
 Your individual participation in this project will be measured by the number and quality of the code/documentation you write as measured by the GitHub version control system. The ONLY work that is counted toward your project grade are explicit working lines of code committed to the master version control system, issues in the issue tracker, meaningful edits in the project wiki, and quality of the final demo and presentation. Students often wonder why team members get higher grades for the same project when they "did more work." If the work isn’t tracked within the project tracking system, it doesn’t count.
 
 # Software Required
-- A text editor that supports JavaScript syntax highlighting - we recommend Atom or Visual Studio Code
+- A text editor that supports JavaScript syntax - we recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/)
 - git (and Git Bash for Windows)
 - Install node, npm, and yarn
 - Google Chrome browser
@@ -48,4 +48,4 @@ Your individual participation in this project will be measured by the number and
 - UI/UX Design
 - Database as a Service
 
-See [schedule](schedule.md) for more details
+See [schedule](schedule.md) for more details.
