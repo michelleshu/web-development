@@ -1,6 +1,10 @@
-| Week | Topic |
-|---|---|
-| 1 | Version Control (Git), HTML |
+[Course Overview](index.md) | [Resources](resources.md)
+
+# Schedule
+
+| Week | Topic | Lecture Notes |
+| --- | --- | --- |
+| 1 | Version Control (Git), HTML | [Notes](lectures/01.md)
 | 2 | CSS |
 | 3 | JavaScript Pt. 1 |
 | 4 | JavaScript Pt. 2 |
