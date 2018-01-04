@@ -2,9 +2,9 @@
 
 # Schedule
 
-| Week | Topic | Lecture Notes |
-| --- | --- | --- |
-| 1 | Version Control (Git), HTML | [Notes](lectures/01.md)
+| Week | Topic | Lecture Notes | Homework |
+| --- | --- | --- | --- |
+| 1 | Version Control (Git), HTML | [Notes](lectures/01.md) | [Homework](homeworks/01.md)
 | 2 | CSS | [Notes](lectures/02.md)
 | 3 | JavaScript Pt. 1 |
 | 4 | JavaScript Pt. 2 |
