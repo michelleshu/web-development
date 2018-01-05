@@ -14,11 +14,11 @@
 | 8 | 3/21 | Midterm Exam, AJAX, HTTP |
 | 9 | 3/28 | Firebase, Application Deployment |
 | 10 | 4/4 | Usability and Design |
-| 11 | 4/13 &ast; | Project Week 1 |
+| 11 | 4/13 ** | Project Week 1 |
 | 12 | 4/18 | Project Week 2 |
 | 13 | 4/25 | Project Week 3 |
 | 14 | 5/2 | Project Week 4 |
 | 15 | 5/9 | Course Wrap-up, Project Demos |
 | 16 | TBD | Final Exam
 
-&ast; Classes follow a Friday schedule
+** Classes follow a Friday schedule
