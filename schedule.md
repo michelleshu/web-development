@@ -8,7 +8,7 @@
 | 2 | 2/7 | CSS | [Notes](lectures/02.md) | [Homework](homeworks/02.md)
 | 3 | 2/14 | JavaScript Pt. 1 |
 | 4 | 2/21 | JavaScript Pt. 2 |
-| 5 | 2/28 | ReactJS Pt. 1 |
+| 5 | 2/28 | ReactJS Pt. 1 | [Notes](lectures/05.md)
 | 6 | 3/7 | ReactJS Pt. 2 |
 | 7 | 3/14 | ReactJS Pt. 3 |
 | 8 | 3/21 | Midterm Exam, AJAX, HTTP |
