@@ -2,9 +2,9 @@
 
 # About this course
 
-This course will teach the basic design and implementation of a web application, with an emphasis on front-end development using Facebook's React framework. By the end of the course, you should have a basic toolkit to build fully functional web applications for hackathons, personal projects, or freelance work. 
+This course will teach the basic design and implementation of a web application, with an emphasis on front-end development using Facebook’s React framework. By the end of the course, you should have a basic toolkit to build fully functional web applications for hackathons, personal projects, or freelance work.
 
-The course will provide an overview of component based web frameworks combining HTML, CSS, JavaScript, and Firebase backend-as-a-service. It will also cover industry best practices around agile development, version control, use of transpilers and build tools, and designing for optimal user experience.
+The course will provide an overview of component based web frameworks combining HTML, CSS, JavaScript, and Firebase backend-as-a-service. It will also cover industry best practices around agile development, version control, use of build tools, and designing for optimal user experience.
 
 # Course Instructors
 
@@ -18,15 +18,22 @@ It is acceptable, even encouraged to form study groups and collaborate in unders
 
 [CUNY Academic Integrity Policy](http://www2.cuny.edu/about/administration/offices/legal-affairs/policies-procedures/academic-integrity-policy/)
 
-# Homework
+# Course Structure
 
-You will be given short homework assignments throughout the course. Homework will be expected to take about 2-3 hours each week to complete and should be submitted online through GitHub. Please refrain from emailing in homework assignments as they can get lost.
+This course will be structured a differently than your average college class. We will be trying out a "reverse classroom" approach in which you will do the majority of reading and learning on your own time before class. We will then spend the time we have together in the classroom working through coding exercises to apply the concepts you learned earlier in the week. Each class meeting will consist of a *lab* and then for homework, you will complete the lab and do the necessary prep for the next class, which may involve reading or tutorials.
+
+In the [schedule](schedule.md), you'll find two columns for each week: *Prep* and *Lab*. Everything in *Prep* should be completed before the class that week so that you can be fully prepared for the in class *Lab*. **It is very important that you come to class each week prepared.** Otherwise it will be difficult to complete the exercises and keep up with the class.
 
 # Project
 
-The final 4 weeks of the course will be dedicated to a final project, in which you will build a live web application in groups of 3-5. The application should solve a realistic business problem. That doesn't mean that it necessarily has to be business oriented, it could be a game. You should aim to create something to address a need of some group of people in the world.
+The final 5 weeks of the course will be dedicated to a final project, in which you will build a live
+web application in groups of 3-5. The application should solve a realistic business need. That
+doesn’t mean that it necessarily has to be business oriented, it could be a game. Your
+individual participation in this project will be measured by your GitHub contributions.
 
-Your individual participation in this project will be measured by the number and quality of the code/documentation you write as measured by the GitHub version control system. The ONLY work that is counted toward your project grade are explicit working lines of code committed to the master version control system, issues in the issue tracker, meaningful edits in the project wiki, and quality of the final demo and presentation. Students often wonder why team members get higher grades for the same project when they "did more work." If the work isn’t tracked within the project tracking system, it doesn’t count.
+# A Note on Self-Learning
+
+In the "real world" of a web developer, many times you will find yourself grappling to pick up new concepts or tools that were not explicitly taught to you. In this course, most of the basic foundation knowledge you will need to complete the labs and projects will be provided in resources and during class. However, you should expect to run into situations in which you will have to solve a problem on your own that was not explicitly covered in class. Google and StackOverflow are your best friends in this scenario, but you are also encouraged to ask for help from classmates, instructors or on Blackboard message boards.
 
 # Software Required
 - A text editor that supports JavaScript syntax - we recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/)
