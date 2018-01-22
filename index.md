@@ -31,9 +31,26 @@ web application in groups of 3-5. The application should solve a realistic busin
 doesn’t mean that it necessarily has to be business oriented, it could be a game. Your
 individual participation in this project will be measured by your GitHub contributions.
 
+# Course Objectives
+
+1. Use modern web development practices to create dynamic pages using HTML, CSS and
+JavaScript (React framework)
+2. Understand HTTP and facilitate communication between a client and server with AJAX.
+3. Use Firebase to implement data persistence, authentication and file storage.
+4. Know fundamental UI/UX design principles to evaluate user’s needs and optimize usability.
+5. Use agile web development practices for project planning and collaboration.
+6. Write unit tests to validate the functionality of web application code.
+
+# Grading
+
+- 40% Lab Assignments
+- 30% Midterm Exam
+- 30% Group Project
+
 # A Note on Self-Learning
 
 In the "real world" of a web developer, many times you will find yourself grappling to pick up new concepts or tools that were not explicitly taught to you. In this course, most of the basic foundation knowledge you will need to complete the labs and projects will be provided in resources and during class. However, you should expect to run into situations in which you will have to solve a problem on your own that was not explicitly covered in class. Google and StackOverflow are your best friends in this scenario, but you are also encouraged to ask for help from classmates, instructors or on Blackboard message boards.
+
 
 # Software Required
 - A text editor that supports JavaScript syntax - we recommend [Atom](https://atom.io/) or [Visual Studio Code](https://code.visualstudio.com/)
