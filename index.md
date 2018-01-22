@@ -20,7 +20,7 @@ It is acceptable, even encouraged to form study groups and collaborate in unders
 
 # Course Structure
 
-This course will be structured a differently than your average college class. We will be trying out a "reverse classroom" approach in which you will do the majority of reading and learning on your own time before class. We will then spend the time we have together in the classroom working through coding exercises to apply the concepts you learned earlier in the week. Each class meeting will consist of a *lab* and then for homework, you will complete the lab and do the necessary prep for the next class, which may involve reading or tutorials.
+This course will be structured a differently than your average college class. We will be trying out a "reverse classroom" approach in which you will do the majority of reading and learning on your own time before class. We will then spend the time we have together in the classroom working through coding exercises to apply the concepts you learned earlier in the week. Each class meeting will consist of a lab. After the class and before the next class, you will complete the lab and do some prep work, which may involve reading or tutorials.
 
 In the [schedule](schedule.md), you'll find two columns for each week: *Prep* and *Lab*. Everything in *Prep* should be completed before the class that week so that you can be fully prepared for the in class *Lab*. **It is very important that you come to class each week prepared.** Otherwise it will be difficult to complete the exercises and keep up with the class.
 
