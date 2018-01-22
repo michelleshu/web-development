@@ -4,7 +4,7 @@
 
 | Week | Date | Topic | Prep | Lab
 | --- | --- | --- | --- | --- |
-| 1 | 1/31 | Version Control (Git), HTML | None | 
+| 1 | 1/31 | Version Control (Git), HTML | None | [Lab 1](labs/01.md)
 | 2 | 2/7 | CSS | 
 | 3 | 2/14 | JavaScript Pt. 1 |
 | 4 | 2/21 | JavaScript Pt. 2 |
