@@ -27,7 +27,7 @@ In the [schedule](schedule.md), you'll find two columns for each week: *Prep* an
 # Project
 
 The final 5 weeks of the course will be dedicated to a final project, in which you will build a live
-web application in groups of 3-5. The application should solve a realistic business need. That
+web application in groups of 2-3. The application should solve a realistic business need. That
 doesn’t mean that it necessarily has to be business oriented, it could be a game. Your
 individual participation in this project will be measured by your GitHub contributions.
 
