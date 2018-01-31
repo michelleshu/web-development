@@ -12,12 +12,6 @@ The course will provide an overview of component based web frameworks combining 
 | ---------- | ------------ |
 | david.moon@addepar.com | michelle.shu@addepar.com |
 
-# Collaboration and Academic Integrity
-
-It is acceptable, even encouraged to form study groups and collaborate in understanding course materials. However, all work on homework assignments should be your own. The work on a group project should be done exclusively by members of that group.
-
-[CUNY Academic Integrity Policy](http://www2.cuny.edu/about/administration/offices/legal-affairs/policies-procedures/academic-integrity-policy/)
-
 # Course Structure
 
 This course will be structured a differently than your average college class. We will be trying out a "reverse classroom" approach in which you will do the majority of reading and learning on your own time before class. We will then spend the time we have together in the classroom working through coding exercises to apply the concepts you learned earlier in the week. Each class meeting will consist of a lab. After the class and before the next class, you will complete the lab and do some prep work, which may involve reading or tutorials.
@@ -46,6 +40,12 @@ JavaScript (React framework)
 - 40% Lab Assignments
 - 30% Midterm Exam
 - 30% Group Project
+
+# Collaboration and Academic Integrity
+
+It is acceptable, even encouraged to form study groups and collaborate in understanding course materials. However, all work on homework assignments should be your own. The work on a group project should be done exclusively by members of that group.
+
+[CUNY Academic Integrity Policy](http://www2.cuny.edu/about/administration/offices/legal-affairs/policies-procedures/academic-integrity-policy/)
 
 # A Note on Self-Learning
 
