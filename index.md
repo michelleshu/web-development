@@ -10,7 +10,7 @@ The course will provide an overview of component based web frameworks combining 
 
 | David Moon | Michelle Shu |
 | ---------- | ------------ |
-| david.moon@addepar.com | michelle.shu@addepar.com |
+| dmoon1221@gmail.com | michelle.shu@addepar.com |
 
 # Course Structure
 
