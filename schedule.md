@@ -7,7 +7,7 @@
 | 1 | 1/31 | Version Control (Git), HTML | None | [Lab 1](labs/01.md)
 | 2 | 2/7 | CSS | [Prep](prep/02.md) | [Lab 2](labs/02.md)
 | 3 | 2/14 | JavaScript Pt. 1 | [Prep](prep/03.md) |
-| 4 | 2/21 | JavaScript Pt. 2 |
+| 4 | 2/21 | JavaScript Pt. 2 | | [Lab 4](labs/04.md)
 | 5 | 2/28 | ReactJS Pt. 1 | 
 | 6 | 3/7 | ReactJS Pt. 2 |
 | 7 | 3/14 | ReactJS Pt. 3 |
