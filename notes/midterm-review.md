@@ -22,12 +22,14 @@ Some specific concepts you may wish to understand:
 - how to pass data up and down the React component hierarchy
 
 ---
+---
 
 
 ![](../images/notes/midterm-review/1.png)
 
 A JavaScript object is a collection of key-value pairs. We usually refer to these pairs as the object properties, where the key is the property name and the value is the property value. Just like a map data structure, a JavaScript object cannot have duplicate keys.
 
+---
 ---
 
 ![](../images/notes/midterm-review/2.png)
@@ -37,11 +39,13 @@ The first token `.cls` identifies elements that look like `< ... class="cls" ...
 In general, the last token in a CSS selector captures the features of the selected elements, while preceding tokens tell us the position of the selected elements relative to others. In this case, the fact that the last token is `span[level=2]` tells us that the selected elements are `span` elements. We could use this information to eliminate choices C and D. We could then eliminate choice A because the square brackets in `span[level=2]` specify an attribute.
 
 ---
+---
 
 ![](../images/notes/midterm-review/3.png)
 
 The target element does not have the form `< ... class="bar" ... >`, so we can eliminate B. The remaining options all identify the target element; however, only A identifies the target element and that element only. Note that C and D both additionally identify the `div` element in line 4.
 
+---
 ---
 
 ![](../images/notes/midterm-review/4.png)
@@ -50,6 +54,7 @@ When writing jQuery code (or any JavaScript code that handles user interaction),
 - First, you come up with the selector needed to identify the target element---in this case, our selector is `#two`. Passing this selector into jQuery -- `$('#two')` -- returns a collection of DOM elements that match the selector.
 - Second, once we have our desired DOM element(s), we define an event handler and bind it to the desired user interaction event. We do this by calling the jQuery's [`.on`](http://api.jquery.com/on/) function on the collection of selected DOM elements. The first argument specifies the type of event -- `'click'` -- and the second argument is the event handler -- `function() { console.log('Two!'); }`.
 
+---
 ---
 
 The next couple questions tested your understanding of the difference between regular functions and arrow functions in JavaScript. Before discussing those questions, let's look at a separate example that will help clarify this distinction. I think you'll find this example much clearer and more concise than those I gave in class.
@@ -103,6 +108,7 @@ To see this invocation-based binding behavior of `regularFunction`, on line 16 w
 On the other hand, when we invoke `arrowFunction` as a method of `differentObj`, we still get `2`. This is because the `this` in the body of `arrowFunction` is bound upon definition. When we pass in `arrowFunction` into `differentObj`, we may as well have passed in a function that whose body is `{ return obj.a; }`.
 
 ---
+---
 
 Now let's return to the questions we looked at in class.
 
@@ -115,6 +121,7 @@ Here we pass the function `foo` into `obj` and invoke it as a method of `obj`. W
 
 Here we pass the function `shift` into the `map` function. The `map` function applies the function `shift` to each element of the `numbers` array. We want to ensure that the `shift` function shifts by the value we have specified for `delta`, every time `shift` is invoked. There's no way we can ensure this with a regular function because we have no control over how `map` invokes `shift`. We need to use an arrow function to ensure that `this.delta` is always `3`.
 
+---
 ---
 
 ![](../images/notes/midterm-review/7.png)
