@@ -143,7 +143,7 @@ Some additional practice questions on React that we didn't cover in class but ma
 
     > Provides organization to code; build small composable, reusable pieces; abstract away details at higher levels, etc
 
-3. [True or False]: You can pass any type of JavaScript variable -- including objects, arrays, and functions -- as a prop to a child component.
+3. [True or False] You can pass any type of JavaScript variable -- including objects, arrays, and functions -- as a prop to a child component.
 
     > True
 
