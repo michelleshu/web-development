@@ -12,7 +12,7 @@ Course material that is fair game for this exam:
 
 
 Some specific concepts you may wish to understand:
-- how the various web technologies we have learned so far (HTML, CSS, JavaScript, jQuery, React) relate to each other and the roles that they play in the implementation of a web page (e.g., HTML specifies the abstract structural layout of a web page while CSS specifies the concrete styling of the web page)
+- how the various web technologies we have learned so far (HTML, CSS, JavaScript, jQuery, React, NPM) relate to each other and the roles that they play in the implementation of a web page (e.g., HTML specifies the abstract structural layout of a web page while CSS specifies the concrete styling of the web page)
 - anything covered on CSS selectors in sections 'Introduction to CSS' and 'CSS Classes and IDs' of the Codecademy CSS tutorial
 - JavaScript objects, classes, regular functions vs arrow functions
 - the `map` function on JavaScript arrays
@@ -129,3 +129,144 @@ Here we pass the function `shift` into the `map` function. The `map` function ap
 Properties of a component's `props` object are those values passed in from the parent and which the component cannot itself modify. Properties of the `state` object are those values that are private to the component and that the component can modify. When deciding what to place in `props` vs `state`, it helps to think about what must be known by the parent.
 
 Here, the `xPos` and `yPos` properties would have to be determined by some parent component that contains all the Boo icons, say, a `Main` component that represents the overall page. Hence, `xPos` and `yPos` go into `props`. On the other hand, the `Main` component does not need to be aware of whether a Boo icon is visible or not. `isVisible` can be managed by each Boo icon internally, hence it goes into the `state` object.
+
+---
+---
+
+Some additional practice questions that we didn't cover in class but may help your studying.
+
+React
+
+1. [Short Answer] What is the purpose of NPM (Node Package Manager)?
+
+    > It is a tool that allows you to bring external libraries, including open source, into a project; bonus: and manage the versions of those dependencies.
+
+2. [Short Answer] What is one benefit of structuring an application into components?
+
+    > Provides organization to code; build small composable, reusable pieces; abstract away details at higher levels, etc
+
+3. [True or False]: You can pass any type of JavaScript variable -- including objects, arrays, and functions -- as a prop to a child component.
+
+    > True
+
+4. [True or False] A component can use this.setProps() to modify the value of one of its props.
+
+    > False
+
+5. [Short Answer] Why do we call `super(props)` inside a constructor for a React component?
+      ```jsx
+      class MyComponent extends React.Component {
+          constructor() {
+              super(props);
+          }
+      }
+      ```
+
+    > `super()` invokes the constructor in the `React.Component` base class to set up the standard functionality and properties of a component
+
+6. [Short answer] What will be displayed in the browser when the following code is run?
+
+    ```jsx
+    class LargeNumber extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                multiplier: 100
+            };
+        }
+
+        render() {
+            return (
+                <p>{this.props.base * this.state.multiplier}</p>
+            );
+        }
+    }
+
+    class Sequence extends React.Component {
+        constructor(props) {
+            super(props);
+            this.numbers = [5, 2, 9];
+        }
+
+        render() {
+            return (
+                <div class="sequence">
+                    {this.numbers.map((number, index) => {
+                        return <LargeNumber key={index} base={number} />;
+                    })}
+                </div>
+            );
+        }
+    }
+
+    ReactDOM.render(<Sequence />, document.getElementById('root'));
+    ```
+
+      > 500  
+      > 200  
+      > 900
+
+
+7. [Short Answer] This code snippet tries to keep `myTextValue` in sync with what is entered in the input, but instead we will get an error. What is wrong with it?
+
+    ```jsx
+    class TextField extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = {
+                myTextValue: ''
+            }
+        }
+
+        setTextValue(event) {
+            this.setState({
+                myTextValue: event.target.value
+            });
+        }
+
+        render() {
+            return <input type="text" onChange={this.setTextValue} />;
+        }
+    }
+    ```
+
+    > `setTextValue` is not bound to `this` in the constructor
+
+8. [Short Answer] In the following code, I am trying to display an alert in `AlertContainer` when the button in `AlertButton` is clicked, but nothing is happening! What did I miss?
+
+    ```jsx
+    class AlertContainer extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.displayAlert = this.displayAlert.bind(this);
+        }
+
+        displayAlert() {
+            alert('Button was pressed!');
+        }
+
+        render() {
+            return (
+                <AlertButton displayAlert={this.displayAlert} />
+            );
+        }
+    }
+
+    class AlertButton extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+
+        render() {
+            return (
+                <button onClick={this.state.displayAlert}>Alert!</button>
+            );
+        }
+    }
+
+    ReactDOM.render(<AlertContainer />, document.getElementById('root'));
+    ```
+
+    > `displayAlert` was passed in as a prop from the parent, so I should have `onClick={this.props.displayAlert})`
