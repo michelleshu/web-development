@@ -147,7 +147,7 @@ Some additional practice questions on React that we didn't cover in class but ma
 
     > True
 
-4. [True or False] A component can use this.setProps() to modify the value of one of its props.
+4. [True or False] A component can use `this.setProps()` to modify the value of one of its props.
 
     > False
 
