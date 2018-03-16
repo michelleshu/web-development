@@ -133,9 +133,7 @@ Here, the `xPos` and `yPos` properties would have to be determined by some paren
 ---
 ---
 
-Some additional practice questions that we didn't cover in class but may help your studying.
-
-React
+Some additional practice questions on React that we didn't cover in class but may help your studying.
 
 1. [Short Answer] What is the purpose of NPM (Node Package Manager)?
 
