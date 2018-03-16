@@ -11,7 +11,7 @@
 | 5 | 2/28 | ReactJS Pt. 1 | [Prep](prep/05.md) | [Lab 5](labs/05.md)
 | 6 | 3/7 | ReactJS Pt. 2 | [Prep](prep/06.md) | [Lab 6](labs/06.md)
 | 7 | 3/14 | ReactJS Pt. 3 | None | [Lab 7](labs/07.md)
-| 8 | 3/21 | Midterm Exam, AJAX, HTTP |
+| 8 | 3/21 | Midterm Exam, AJAX, HTTP | [Midterm Review](notes/midterm-review.md)
 | 9 | 3/28 | React Router and Firebase |
 | 10 | 4/4 | Usability and Design |
 | 11 | 4/13 ** | Project Week 1 |
