@@ -7,7 +7,7 @@ Course material that is fair game for this exam:
 - Concepts covered in the Codecademy tutorials we have completed as prep. Specifically, this includes:
   - sections 'Introduction to CSS' and 'CSS Classes and IDs' in the [CSS tutorial](https://www.codecademy.com/en/tracks/web)
   - all of the [jQuery tutorial](https://www.codecademy.com/learn/learn-jquery)
-- Concepts covered in the Preps we have completed so far, i.e., everything linked under the Prep column in the [schedule](https://michelleshu.github.io/web-development/schedule.html). This does not include external documentation (other than the Codecademy tutorials). I am also excluding the section titled `this` in [Prep 4](https://michelleshu.github.io/web-development/prep/04.html). However, I do expect you to understand the discussion in the discussion below on regular functions, arrow functions, and how they bind `this` differently.
+- Concepts covered in the Preps we have completed so far, i.e., everything linked under the Prep column in the [schedule](https://michelleshu.github.io/web-development/schedule.html). This does not include external documentation (other than the Codecademy tutorials). I am also excluding the section titled `this` in [Prep 4](https://michelleshu.github.io/web-development/prep/04.html). However, I do expect you to understand the discussion below on regular functions, arrow functions, and how they bind `this` differently.
 - Everything covered in the practice questions below.
 
 
@@ -52,7 +52,7 @@ The target element does not have the form `< ... class="bar" ... >`, so we can e
 
 When writing jQuery code (or any JavaScript code that handles user interaction), you can break down your task into two main steps.
 - First, you come up with the selector needed to identify the target element---in this case, our selector is `#two`. Passing this selector into jQuery -- `$('#two')` -- returns a collection of DOM elements that match the selector.
-- Second, once we have our desired DOM element(s), we define an event handler and bind it to the desired user interaction event. We do this by calling the jQuery's [`.on`](http://api.jquery.com/on/) function on the collection of selected DOM elements. The first argument specifies the type of event -- `'click'` -- and the second argument is the event handler -- `function() { console.log('Two!'); }`.
+- Second, once we have our desired DOM element(s), we define an event handler and bind it to the desired user interaction event. We do this by calling jQuery's [`.on`](http://api.jquery.com/on/) function on the collection of selected DOM elements. The first argument specifies the type of event -- `'click'` -- and the second argument is the event handler -- `function() { console.log('Two!'); }`.
 
 ---
 ---
@@ -105,7 +105,7 @@ On lines 08 and 09, we define a `regularFunction` and an `arrowFunction`, both o
 
 To see this invocation-based binding behavior of `regularFunction`, on line 16 we create a new object `differentObj` whose property `a` has value `3`. We also pass in `regularFunction` and `arrowFunction` so that they may be invoked as methods of `differentObj`. On line 23, when we invoke `regularFunction` as a method of `differentObj`, `regularFunction` binds its `this` to `differentObj` and thus returns `3`.
 
-On the other hand, when we invoke `arrowFunction` as a method of `differentObj`, we still get `2`. This is because the `this` in the body of `arrowFunction` is bound upon definition. When we pass in `arrowFunction` into `differentObj`, we may as well have passed in a function that whose body is `{ return obj.a; }`.
+On the other hand, when we invoke `arrowFunction` as a method of `differentObj`, we still get `2`. This is because the `this` in the body of `arrowFunction` is bound upon definition. When we pass in `arrowFunction` into `differentObj`, we may as well have passed in a function whose body is `{ return obj.a; }`.
 
 ---
 ---
@@ -162,7 +162,7 @@ Some additional practice questions on React that we didn't cover in class but ma
 
     > `super()` invokes the constructor in the `React.Component` base class to set up the standard functionality and properties of a component
 
-6. [Short answer] What will be displayed in the browser when the following code is run?
+6. [Short Answer] What will be displayed in the browser when the following code is run?
 
     ```jsx
     class LargeNumber extends React.Component {
