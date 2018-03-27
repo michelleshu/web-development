@@ -13,9 +13,9 @@
 | 7 | 3/14 | ReactJS Pt. 3 | None | [Lab 7](labs/07.md)
 | 8 | 3/21 | Snow Day
 | 9 | 3/28 | Midterm Exam, AJAX, HTTP | [Midterm Review](notes/midterm-review.md)
-| 10 | 4/4 | React Router and Firebase | [Prep](prep/09.md)
-| 11 | 4/13 ** | Usability and Design |
-| 12 | 4/18 | Project Week 1 |
+| 10 | 4/4 | Spring Break
+| 11 | 4/13 ** | React Router and Firebase | [Prep](prep/09.md)
+| 12 | 4/18 | Project Week 1 | *Design*
 | 13 | 4/25 | Project Week 2 |
 | 14 | 5/2 | Project Week 3 |
 | 15 | 5/9 | Project Week 4 |
