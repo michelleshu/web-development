@@ -19,6 +19,7 @@
 | 13 | 4/25 | Project Week 2 |
 | 14 | 5/2 | Project Week 3 |
 | 15 | 5/9 | Project Week 4 |
-| 16 | TBD | Course Wrap-up, Project Demos |
+| 16 | 5/16 | Project Week 5 |
+| 17 | 5/23 | Course Wrap-up, Project Demos |
 
 ** Classes follow a Friday schedule
