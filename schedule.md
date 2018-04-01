@@ -14,7 +14,7 @@
 | 8 | 3/21 | Snow Day
 | 9 | 3/28 | Midterm Exam | [Midterm Review](notes/midterm-review.md)
 | 10 | 4/4 | Spring Break
-| 11 | 4/13 ** | Firebase, AJAX, HTTP | [Prep](prep/09.md)
+| 11 | 4/13 ** | Firebase, AJAX, HTTP | [Prep](prep/11.md)
 | 12 | 4/18 | React Router, Project Intro/Setup | *Router* 
 | 13 | 4/25 | Project Week 1 | *Design*
 | 14 | 5/2 | Project Week 2 |
