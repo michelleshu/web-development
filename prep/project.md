@@ -13,18 +13,97 @@ First, your application must persist user-specified data to Firebase. An anti-ex
 Second, your application must provide non-trivial functionality beyond persisting and displaying data. As an anti-example, a basic to-do list that allows the user to create and complete to-do items in a static list does not provide sufficient functionality beyond persistence. A better example would be a to-do list that allows the user to group them by project and/or date, provides a drag-and-drop UI for re-organizing tasks, and supports searching/filtering on tasks.
 
 > Note: You can earn an extra 10 points (on top of 100) by integrating with a third-party API. Just as your application should provide functionality beyond simply displaying persisted data, you should aim to go beyond simply tacking on an unrelated display of third-party data. An anti-example is to add a list of recent Trump tweets to your to-do app. A better example is to extend your to-do list with a simple calendar view that juxtaposes your Google Calendar events alongside your tasks within each day.
+>
+> Alternatively, you can earn an extra 10 points by utilizing a visualization library like [D3.js](https://d3js.org/). Once again, you should aim to go beyond a trivial usage of the library. Whatever you build with the library should constitute a fundamental piece of your application's user interface/experience.
+>
+> You cannot earn more than 10 extra points.
+
+If you are having trouble coming up with your own idea, you are welcome to implement the to-do list or drum beat loop ideas above. Depending on how large your group is, we may ask that you further extend the application with additional features. If you choose to implement the to-do list application, then you are required to come up with additional features that differ from what was proposed above---this is because I use the to-do list application to give you a sample tech spec in the next section. Another idea similar in spirit to the to-do list is a personal expense manager in which you can record purchases and display summary statistics. This would be a good candidate for making use of the D3.js library.
 
 ---
 
 ## Specification
 
 Once you have decided upon what to build, your first assignment is to complete a design and technical specification for your application. Your specification should include the following pieces:
-- a comprehensive list of user stories
 - mocks/sketches of your application in its various states
+- a comprehensive list of user stories
 - a complete React component hierarchy derived from your mocks
 - the structure of persisted user-specified data
 - if you utilize a third-party library, a description of the specific objects/classes/functions that you expect to leverage
 - if you integrate with a third-party API, the API routes and the structure of the third-party data
+
+You should treat this specification as a living document that you update as needed throughout the project timeline. (No need to update your initial mocks unless you undertake a drastic re-design.) From our perspective, we will be treating this specification as your documentation. How well-maintained your tech spec is will contribute to your project grade. 
+
+Here is an example of such a specification for the to-do list application described in the previous section.
+- mocks
+    ![](../images/project/project-view.png)
+    ![](../images/project/filter-by-text.png)
+    ![](../images/project/calendar-view.png)
+    ![](../images/project/add-task.png)
+- user stories
+  - user can create and complete/delete to-do items
+  - user can create and complete/delete projects
+  - user can tag to-do items with a date
+  - user can tag to-do items with a project
+  - user can view and rearrange to-do items in a calendar view
+  - user can view and rearrange to-do items in a project view
+  - user can filter to-do items in any view based on the presence of a substring in each to-do item's description
+  - user can see Google calendar events juxtaposed with events in calendar view
+- React components
+  - Main
+    - top-level component that manages entire application state
+    - sets up React Router
+    - interfaces with Firebase and Google Calendar API
+    - features search bar that allows user to filter visible results in any route
+    - children components
+      - ProjectView
+      - UpcomingView
+  - ProjectView
+    - one of two main routes of the application
+    - shows tasks grouped under project headers
+    - children components
+      - AddTask
+      - DragAndDropList
+  - UpcomingView
+    - one of two main routes of the application
+    - shows groups grouped under date range headers
+    - date range headers are limited to the next seven days including today, the next six month including the current month, the remainder of the year
+    - children components
+      - AddTask
+      - DragAndDropList
+  - DragAndDropList
+    - a re-usable component that displays items in a list
+    - items can be dragged and dropped to reorder them
+    - children components
+      - DragAndDropItem
+  - DragAndDropItem
+    - internal component of DragAndDropList that represents a list item
+    - user can delete an item
+  - AddTask
+    - form component that lets user create new tasks
+    - user can specify task description, date, and project
+  - Task
+    - component used to display a task
+    - passed as part of props.children into DragAndDropList
+    - user can toggle isEditing state
+  - Header
+    - component used to display a list header
+    - passed as part of props.children into DragAndDropList
+- persisted data
+  - task
+    - id
+    - projectId
+    - description : string description of task
+    - date : date string of when user intends task to be completed
+    - isCompleted : boolean
+  - project
+    - id
+    - name : string
+    - isCompleted : boolean
+- third-party data
+  - Google Calendar events
+    - route to fetch events: https://developers.google.com/calendar/v3/reference/events/get
+    - structure of returned data: https://developers.google.com/calendar/v3/reference/events#resource
 
 ---
 
@@ -38,8 +117,7 @@ As is the case with your personal repos, the `master` branch will be protected s
 
 In adopting this process, you will be practicing a standard workflow for collaboration in modern software development. This approach has important benefits: (1) developing on individual branches allows team members to work concurrently on the same codebase without stepping on each other's toes, (2) establishing a formal process for merging into `master` upholds its sanctity, and (3) pull requests provide a good way to present the changes you made to your team members.
 
-- describe workflow for creating branches
-- describe how to handle merge conflicts
+Stay tuned for more details on helpful branching workflows and managing merge conflicts.
 
 ### Stand-Up Meetings
 
@@ -102,15 +180,11 @@ Only the code on `master` in your GitHub repo will be considered submitted each 
   - Does your code persist user-specified data?
   - Does your code provide non-trivial functionality beyond persisting and displaying data?
 - process (25 points)
-  - Is your tech spec maintained and updated as the project progresses?
+  - Is your tech spec maintained and updated as the project progresses? 
   - Are you creating Git branches and using GitHub pull requests to merge your work into the master branch?
   - Are you planning ahead and distributing work evenly among your teammates (as measured by number and size of pull requests)?
   - Are you meeting your weekly milestones?
   - Are you prepared for your stand-up meetings? Are you clearly communicating what you worked on, if and on what you are blocked, and what you will be working on next?
 - presentation (10 points)
-  - Is there a demo of key user flows?
-  - Do you review a comprehensive list of user stories?
-  - Do you review your React component hiearchy?
-  - Do you discuss 
 
 
