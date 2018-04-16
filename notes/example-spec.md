@@ -1,0 +1,69 @@
+- mocks
+    ![](../images/project/project-view.png)
+    ![](../images/project/filter-by-text.png)
+    ![](../images/project/calendar-view.png)
+    ![](../images/project/add-task.png)
+- user stories
+  - user can create and complete/delete to-do items
+  - user can create and complete/delete projects
+  - user can tag to-do items with a date
+  - user can tag to-do items with a project
+  - user can view and rearrange to-do items in a calendar view
+  - user can view and rearrange to-do items in a project view
+  - user can filter to-do items in any view based on the presence of a substring in each to-do item's description
+  - user can see Google calendar events juxtaposed with events in calendar view
+- React components
+  - Main
+    - top-level component that manages entire application state
+    - sets up React Router
+    - interfaces with Firebase and Google Calendar API
+    - features search bar that allows user to filter visible results in any route
+    - children components
+      - ProjectView
+      - UpcomingView
+  - ProjectView
+    - one of two main routes of the application
+    - shows tasks grouped under project headers
+    - children components
+      - AddTask
+      - DragAndDropList
+  - UpcomingView
+    - one of two main routes of the application
+    - shows groups grouped under date range headers
+    - date range headers are limited to the next seven days including today, the next six month including the current month, the remainder of the year
+    - children components
+      - AddTask
+      - DragAndDropList
+  - DragAndDropList
+    - a re-usable component that displays items in a list
+    - items can be dragged and dropped to reorder them
+    - children components
+      - DragAndDropItem
+  - DragAndDropItem
+    - internal component of DragAndDropList that represents a list item
+    - user can delete an item
+  - AddTask
+    - form component that lets user create new tasks
+    - user can specify task description, date, and project
+  - Task
+    - component used to display a task
+    - passed as part of props.children into DragAndDropList
+    - user can toggle isEditing state
+  - Header
+    - component used to display a list header
+    - passed as part of props.children into DragAndDropList
+- persisted data
+  - task
+    - id
+    - projectId
+    - description : string description of task
+    - date : date string of when user intends task to be completed
+    - isCompleted : boolean
+  - project
+    - id
+    - name : string
+    - isCompleted : boolean
+- third-party data
+  - Google Calendar events
+    - route to fetch events: https://developers.google.com/calendar/v3/reference/events/get
+    - structure of returned data: https://developers.google.com/calendar/v3/reference/events#resource
