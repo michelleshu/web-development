@@ -17,7 +17,7 @@
 | 11 | 4/13 | No Class | [Firebase](prep/11.md) | Firebase due 4/13
 | 12 | 4/18 | Project Intro | [React Router](prep/12.md) | React Router and Midterm Makeup due 4/18
 | 13 | 4/25 | Project Week 1 | [Project Rubric](prep/project.md) |
-| 14 | 5/2 | Project Week 2 | [Project Week 1: UX/UI Design](labs/13.md) |
+| 14 | 5/2 | Project Week 2 | [Project Week 1: UX/UI Design](prep/13.md) |
 | 15 | 5/9 | Project Week 3 |
 | 16 | 5/16 | Project Week 4 |
 | 17 | 5/23 | Course Wrap-up, Project Demos |
