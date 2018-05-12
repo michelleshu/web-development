@@ -48,8 +48,6 @@ As is the case with your personal repos, the `master` branch will be protected s
 
 In adopting this process, you will be practicing a standard workflow for collaboration in modern software development. This approach has important benefits: (1) developing on individual branches allows team members to work concurrently on the same codebase without stepping on each other's toes, (2) establishing a formal process for merging into `master` upholds its sanctity, and (3) pull requests provide a good way to present the changes you made to your team members.
 
-Stay tuned for more details on helpful branching workflows and managing merge conflicts.
-
 ### Stand-Up Meetings
 
 Each week, we will schedule a 10-15 minute stand-up meeting with each team. In each meeting, every team member should be prepared to answer the following questions:
@@ -65,7 +63,13 @@ Your communication in these stand-up meetings will contribute to your overall pr
 
 ## Demo + Presentation
 
-Stay tuned for more details.
+On 05/23, your group will give a final demo and slide-based presentation of your project. The demo and presentation together should take 15-20 minutes.
+
+Think of your demo as an elevator pitch to potential investors. Your demo should present a cohesive narrative of how the user would engage with your application, motivating and demonstrating its key features.
+
+Your presentation will then dive into the details of implementation. Present the overall hierarchy of your React components, the data flow between them, and the structure of the data persisted to Firebase. Reflect on your implementation experience and highlight any challenges you encountered. Describe what the problem was, how you addressed the issue, and what you took away from the experience once you resolved the issue.
+
+Finally, your presentation should conclude with a retrospective on the software development process. How did you coordinate with and distribute work across your team? Which tools and workflows did you find useful, and which did you find to be burdensome? When did your plans or communication go awry? What would you do differently next time? What would you repeat? Be as specific as possible, citing concrete details and/or anecdotes.
 
 ---
 
